@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="display page of all coinrank top 100 and their ranks">
+  <meta name="author" content="Marshall Gordon">
+  <style>
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  
+  </style>
+</head>
+<body>
+  <table id="playerTable">
+    <tr>
+      <th>Player</th>
+      <th>Rank</th>
+      <th>Score</th>
+    </tr>
+  </table>
+   <a href="https://docs.google.com/spreadsheets/d/11mut5bQ4I8OL31pZVislFdDoEXRSzyCm47AiyVL-2tA/edit#gid=1684664396">View CoinSheet</a> 
+  <script type="text/javascript" src="popup.js"></script>
+
+</body>
+</html>
+
+
